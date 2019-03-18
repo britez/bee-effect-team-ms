@@ -1,0 +1,50 @@
+products:
+   app/controllers/TeamController.scala -> build/playBinary/classes/controllers/TeamController$TeamRepresentation$.class
+   app/controllers/TeamController.scala -> build/playBinary/classes/controllers/TeamController$TeamRepresentation.class
+   app/controllers/TeamController.scala -> build/playBinary/classes/controllers/TeamController.class
+   build/src/play/binary/routesScalaSources/controllers/ReverseRoutes.scala -> build/playBinary/classes/controllers/ReverseTeamController.class
+   build/src/play/binary/routesScalaSources/controllers/javascript/JavaScriptReverseRoutes.scala -> build/playBinary/classes/controllers/javascript/ReverseTeamController.class
+   build/src/play/binary/routesScalaSources/controllers/routes.java -> build/playBinary/classes/controllers/routes$javascript.class
+   build/src/play/binary/routesScalaSources/controllers/routes.java -> build/playBinary/classes/controllers/routes.class
+   build/src/play/binary/routesScalaSources/router/Routes.scala -> build/playBinary/classes/router/Routes$$anonfun$routes$1.class
+   build/src/play/binary/routesScalaSources/router/Routes.scala -> build/playBinary/classes/router/Routes.class
+   build/src/play/binary/routesScalaSources/router/RoutesPrefix.scala -> build/playBinary/classes/router/RoutesPrefix$.class
+   build/src/play/binary/routesScalaSources/router/RoutesPrefix.scala -> build/playBinary/classes/router/RoutesPrefix.class
+binary dependencies:
+   app/controllers/TeamController.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/rt.jar
+   app/controllers/TeamController.scala -> /Users/mapsi/.gradle/caches/modules-2/files-2.1/com.typesafe.play/play-functional_2.12/2.6.12/85197387752a28b8b63a8aca50756fd1b0a4f9e4/play-functional_2.12-2.6.12.jar
+   app/controllers/TeamController.scala -> /Users/mapsi/.gradle/caches/modules-2/files-2.1/com.typesafe.play/play-json_2.12/2.6.12/7122735dd841096aa8e6c26b851ff9b8073feb43/play-json_2.12-2.6.12.jar
+   app/controllers/TeamController.scala -> /Users/mapsi/.gradle/caches/modules-2/files-2.1/com.typesafe.play/play_2.12/2.6.21/30f4b40d6f7f6d7e56810e1b18f96c0e4bd60b8d/play_2.12-2.6.21.jar
+   app/controllers/TeamController.scala -> /Users/mapsi/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.6/6bd975dd5ca2a50b94413b708389b892ae423181/scala-library-2.12.6.jar
+   build/src/play/binary/routesScalaSources/controllers/ReverseRoutes.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/rt.jar
+   build/src/play/binary/routesScalaSources/controllers/ReverseRoutes.scala -> /Users/mapsi/.gradle/caches/modules-2/files-2.1/com.typesafe.play/play_2.12/2.6.21/30f4b40d6f7f6d7e56810e1b18f96c0e4bd60b8d/play_2.12-2.6.21.jar
+   build/src/play/binary/routesScalaSources/controllers/ReverseRoutes.scala -> /Users/mapsi/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.6/6bd975dd5ca2a50b94413b708389b892ae423181/scala-library-2.12.6.jar
+   build/src/play/binary/routesScalaSources/controllers/javascript/JavaScriptReverseRoutes.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/rt.jar
+   build/src/play/binary/routesScalaSources/controllers/javascript/JavaScriptReverseRoutes.scala -> /Users/mapsi/.gradle/caches/modules-2/files-2.1/com.typesafe.play/play_2.12/2.6.21/30f4b40d6f7f6d7e56810e1b18f96c0e4bd60b8d/play_2.12-2.6.21.jar
+   build/src/play/binary/routesScalaSources/controllers/javascript/JavaScriptReverseRoutes.scala -> /Users/mapsi/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.6/6bd975dd5ca2a50b94413b708389b892ae423181/scala-library-2.12.6.jar
+   build/src/play/binary/routesScalaSources/controllers/routes.java -> /Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/rt.jar
+   build/src/play/binary/routesScalaSources/router/Routes.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/rt.jar
+   build/src/play/binary/routesScalaSources/router/Routes.scala -> /Users/mapsi/.gradle/caches/modules-2/files-2.1/com.typesafe.play/play_2.12/2.6.21/30f4b40d6f7f6d7e56810e1b18f96c0e4bd60b8d/play_2.12-2.6.21.jar
+   build/src/play/binary/routesScalaSources/router/Routes.scala -> /Users/mapsi/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.6/6bd975dd5ca2a50b94413b708389b892ae423181/scala-library-2.12.6.jar
+   build/src/play/binary/routesScalaSources/router/RoutesPrefix.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/rt.jar
+   build/src/play/binary/routesScalaSources/router/RoutesPrefix.scala -> /Users/mapsi/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.6/6bd975dd5ca2a50b94413b708389b892ae423181/scala-library-2.12.6.jar
+source dependencies:
+   build/src/play/binary/routesScalaSources/controllers/routes.java -> build/src/play/binary/routesScalaSources/controllers/ReverseRoutes.scala
+   build/src/play/binary/routesScalaSources/controllers/routes.java -> build/src/play/binary/routesScalaSources/controllers/javascript/JavaScriptReverseRoutes.scala
+   build/src/play/binary/routesScalaSources/controllers/routes.java -> build/src/play/binary/routesScalaSources/controllers/routes.java
+   build/src/play/binary/routesScalaSources/controllers/routes.java -> build/src/play/binary/routesScalaSources/router/RoutesPrefix.scala
+   build/src/play/binary/routesScalaSources/router/Routes.scala -> app/controllers/TeamController.scala
+   build/src/play/binary/routesScalaSources/router/Routes.scala -> build/src/play/binary/routesScalaSources/router/RoutesPrefix.scala
+external dependencies:
+class names:
+   app/controllers/TeamController.scala -> controllers.TeamController
+   app/controllers/TeamController.scala -> controllers.TeamController$TeamRepresentation
+   app/controllers/TeamController.scala -> controllers.TeamController$TeamRepresentation$
+   build/src/play/binary/routesScalaSources/controllers/ReverseRoutes.scala -> controllers.ReverseTeamController
+   build/src/play/binary/routesScalaSources/controllers/javascript/JavaScriptReverseRoutes.scala -> controllers.javascript.ReverseTeamController
+   build/src/play/binary/routesScalaSources/controllers/routes.java -> controllers.routes
+   build/src/play/binary/routesScalaSources/controllers/routes.java -> controllers.routes$javascript
+   build/src/play/binary/routesScalaSources/router/Routes.scala -> router.Routes
+   build/src/play/binary/routesScalaSources/router/Routes.scala -> router.Routes$$anonfun$routes$1
+   build/src/play/binary/routesScalaSources/router/RoutesPrefix.scala -> router.RoutesPrefix
+   build/src/play/binary/routesScalaSources/router/RoutesPrefix.scala -> router.RoutesPrefix$
