@@ -1,34 +1,36 @@
 package controllers
 
 import javax.inject._
-
+import models.Team
 import play.api.Logger
-import play.api._
 import play.api.mvc._
-
 import play.api.libs.json._
+import repositories.TeamRepository
+
+import scala.concurrent.{ExecutionContext, Future}
 
 /**
  * This controller creates an `Action` to handle HTTP requests to the
  * application's home page.
  */
 @Singleton
-class TeamController @Inject()(cc: ControllerComponents) extends AbstractController(cc) {
+class TeamController @Inject()(cc: ControllerComponents, teamRepository: TeamRepository)(implicit ec: ExecutionContext) extends AbstractController(cc) {
 
   private val logger = Logger(getClass)
 
-  case class TeamRepresentation(id:Long, name:String)
-
-  object TeamRepresentation {
-    implicit val teamFormat = Json.format[TeamRepresentation]
+  def list() = Action.async { implicit request =>
+    teamRepository.list().map{ teams =>
+     Ok(Json.toJson(teams))
+    }
   }
 
-  def list() = Action { implicit request: Request[AnyContent] =>
-    val teamJson: JsValue = Json.toJson(List(TeamRepresentation(id=1, name="Equipo ofertador")))
-    Ok(teamJson)
+  def create() = Action.async(parse.json) { implicit request =>
+    val parsedTeam:Team = Json.parse(request.body.toString()).as[Team]
+    teamRepository
+      .create(parsedTeam.name)
+      .map { team =>
+        Ok(Json.toJson(team))
+      }
   }
 
-  def show(id:Long) = Action { implicit request: Request[AnyContent] =>
-    Ok(Json.toJson(TeamRepresentation(id=id, name="Equipo de prueba")))
-  }
 }

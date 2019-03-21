@@ -45,10 +45,9 @@ Seq[Any](format.raw/*1.4*/("""
               /*
                   -- GENERATED --
                   DATE: Wed Mar 06 17:58:34 ART 2019
-                  SOURCE: /Users/mapsi/Development/Repositories/bee-effect-ms/bee-effect-team-ms/app/views/index.scala.html
+                  SOURCE: /Users/mapsi/Development/Repositories/default-ms/default-team-ms/app/views/index.scala.html
                   HASH: adc4a33e138fa0b6637920aef4ce9cbe0cca8cd3
                   MATRIX: 722->1|818->3|846->6|877->29|916->31|945->34|1001->61
                   LINES: 21->1|26->1|28->3|28->3|28->3|29->4|30->5
                   -- GENERATED --
               */
-          

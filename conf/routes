@@ -5,4 +5,4 @@
 
 # An example controller showing a sample home page
 GET     /teams                      controllers.TeamController.list
-GET     /teams/:id                  controllers.TeamController.show(id: Long)
+POST    /teams                      controllers.TeamController.create
