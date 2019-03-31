@@ -4,10 +4,9 @@ import javax.inject._
 import models.Team
 import play.api.Logger
 import play.api.mvc._
-import play.api.libs.json._
 import repositories.TeamRepository
 
-import scala.concurrent.{ExecutionContext, Future}
+import scala.concurrent.ExecutionContext
 
 /**
  * This controller creates an `Action` to handle HTTP requests to the
@@ -18,18 +17,29 @@ class TeamController @Inject()(cc: ControllerComponents, teamRepository: TeamRep
 
   private val logger = Logger(getClass)
 
+  import play.api.libs.json._
+
+  case class TeamRepresentation(id : Option[Long] , name: String)
+
+  object TeamRepresentation {
+    implicit val teamFormat = Json.format[TeamRepresentation]
+    implicit val teamWrites = Json.writes[TeamRepresentation]
+  }
+
   def list() = Action.async { implicit request =>
-    teamRepository.list().map{ teams =>
-     Ok(Json.toJson(teams))
-    }
+    teamRepository
+      .list()
+      .map(x => x.map(y => TeamRepresentation(Option.apply(y.id), y.name)))
+      .map{ teams => Ok(Json.toJson(teams))}
   }
 
   def create() = Action.async(parse.json) { implicit request =>
-    val parsedTeam:Team = Json.parse(request.body.toString()).as[Team]
+    val parsedTeam:TeamRepresentation = Json.parse(request.body.toString()).as[TeamRepresentation]
     teamRepository
       .create(parsedTeam.name)
+      .map(x => TeamRepresentation(Option.apply(x.id), x.name))
       .map { team =>
-        Ok(Json.toJson(team))
+        Created(Json.toJson(team))
       }
   }
 
